@@ -1,0 +1,32 @@
+package main
+
+import "fmt"
+
+/*
+- Utilizando o exercício anterior, adicione uma entrada ao map e demonstre o map inteiro utilizando range.
+*/
+
+func main() {
+
+	mepe := map[string][]string{
+		"dasilva_guriaestranhadostrangerthings": []string{
+			"desaparecer", "ser assustadora", "raspar o cabelo",
+		},
+		"senna_ayrton": []string{
+			"andar de jetski", "ser milionário", "falar com sotaque de paulista mano",
+		},
+		"pike_rob": []string{
+			"criar linguagens de programação", "usar uns ternos muito loucos",
+		},
+	}
+
+	mepe["loureiro_kiko"] = []string{"usar os trequinho no punho", "tacar fogo na guitarra"}
+
+	for k, v := range mepe {
+		fmt.Println(k)
+		for i, h := range v {
+			fmt.Println("\t", i, " - ", h)
+		}
+	}
+
+}
