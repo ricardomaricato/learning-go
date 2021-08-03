@@ -12,17 +12,16 @@ import "fmt"
 */
 
 func main() {
-	array := [5]int{1, 2, 3, 4, 5}
-	fmt.Println(array)
-	slice := []int{1, 2, 3, 4, 5}
-	fmt.Println(slice)
+	slice := []int{20, 21, 22, 23, 1, 13}
 
-	slice2 := append(slice, 6)
-	fmt.Println(slice2)
+	total := 0
 
-	fmt.Println(slice[3])
-	slice[3] = 348756
-	fmt.Println(slice[3])
-	slice[20] = 1
-	fmt.Println(slice[20])
+	for _, valor := range slice {
+
+		// mesma coisa que total = total + valor
+		total += valor
+
+	}
+
+	fmt.Println("O valor total é:", total)
 }
