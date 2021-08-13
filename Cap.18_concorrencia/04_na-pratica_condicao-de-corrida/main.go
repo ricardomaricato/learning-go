@@ -9,7 +9,7 @@ import (
 /*
 - Aqui vamos replicar a race condition mencionada no artigo anterior.
     - time.Sleep(time.Second) vs. runtime.Gosched()
-- go help → go help build → go run -race main0.go
+- go help → go help build → go run -race main1.go
 - Como resolver? Mutex.
 */
 
